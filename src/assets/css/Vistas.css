@@ -1,0 +1,34 @@
+.container {
+    text-align:center;
+}
+
+.menuC{
+    height:fit-content;
+    width:400px;
+    margin:20px auto;
+    background-color:lightsalmon;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.buttonC {
+    flex-direction: column;
+    display: flex;
+}
+.buttonC button{
+    background-color: aliceblue;
+    border: 0px;
+    margin: 0px 10px 15px 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: medium;
+    width: 380px;
+}
+.buttonC button:hover{
+    background-color: salmon;
+    color: white;
+}
+.buttonC button:focus{
+    background-color: #61dafb;
+}
