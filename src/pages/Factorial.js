@@ -23,7 +23,7 @@ class Factorial extends Component {
         })
             .then((response) =>
                 response.json().then((json) => {
-                    console.log("Respuesta", json.fact)
+                    console.log("Respuesta", json)
                     if (json.status) {
                         this.setState({
                             ...this.state,
@@ -43,16 +43,17 @@ class Factorial extends Component {
     render() {
         return (
             <div className="container">
-                <div className="menuC">
+                <div className="fondo">
                     <h1>Factorial</h1>
                     <p>Ingrese el número del que deseas conocer su factorial</p>
                     <form onSubmit={this.handleSubmit}>
-                        <input name="numero" onChange={this.handleChange} value={this.state.numero} type="number" min={0} placeholder={"Ejemplo: 3! = 3x2x1 = 6"}/>
+                        <input name="numero" onChange={this.handleChange} value={this.state.numero}
+                               type="number" min={0} max={170}/>
                         <button type="submit">Mostrar</button>
                     </form>
                     <h4>Factorial de {this.state.numero} = {this.state.response}</h4>
                     <h3>{this.state.response}</h3>
-                    <div className="buttonC">
+                    <div className="opciones">
                         <Link to="/">
                             <button>Volver al Menu</button>
                         </Link>

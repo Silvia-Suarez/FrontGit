@@ -2,7 +2,7 @@
     text-align:center;
 }
 
-.menuC{
+.fondo{
     height:fit-content;
     width:400px;
     margin:20px auto;
@@ -11,11 +11,11 @@
     padding: 10px;
 }
 
-.buttonC {
+.opciones {
     flex-direction: column;
     display: flex;
 }
-.buttonC button{
+.opciones button{
     background-color: aliceblue;
     border: 0px;
     margin: 0px 10px 15px 10px;
@@ -25,10 +25,10 @@
     font-size: medium;
     width: 380px;
 }
-.buttonC button:hover{
+.opciones button:hover{
     background-color: #282c34;
     color: aliceblue;
 }
-.buttonC button:focus{
+.opciones button:focus{
     background-color: #61dafb;
 }

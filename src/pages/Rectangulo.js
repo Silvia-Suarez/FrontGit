@@ -45,7 +45,7 @@ class Rectangulo extends Component {
     render() {
         return (
             <div className="container">
-                <div className="menuC">
+                <div className="fondo">
                     <h1>Rectángulo</h1>
                     <p>Ingrese la base y la altura para conocer el área y el perímetro del rectángulo</p>
                     <form onSubmit={this.handleSubmit}>
@@ -58,7 +58,7 @@ class Rectangulo extends Component {
                             <label>Altura: </label>
                             <input name="altura" onChange={this.handleChange} value={this.state.altura} type="number" min={0}placeholder={"Altura del rectangulo"}/>
                         </div>
-                        <button>Mostrar</button>
+                        <button type="submit">Mostrar</button>
                     </form>
                     <h4>Perímetro:{this.state.per}</h4>
                     <h4>Área: {this.state.area}</h4>

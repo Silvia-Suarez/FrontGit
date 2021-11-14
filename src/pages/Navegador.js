@@ -5,9 +5,9 @@ class Navegador extends Component{
     render(){
         return(
             <div className="container">
-                <div className="menuC">
+                <div className="fondo">
                     <h1>seleccione la acción deseada</h1>
-                    <div className="buttonC">
+                    <div className="opciones">
                         <Link to="/fibonacci"><button>Números Fibonacci</button></Link>
                         <Link to="/factorial"><button>Factorial de un Número</button></Link>
                         <Link to="/circulo"><button>Medidas del Círculo</button></Link>

@@ -44,7 +44,7 @@ class Fibonacci extends Component {
     render() {
         return (
             <div className="container">
-                <div className="menuC">
+                <div className="fondo">
                     <h1>Fibonacci</h1>
                     <p>Ingrese la cantidad de números de la serie de Fibonacci que quiere ver</p>
 
@@ -54,7 +54,7 @@ class Fibonacci extends Component {
                         <button type="submit">Mostrar</button>
                     </form>
                     <br/>
-                    <textarea value={this.state.response} contentEditable={"false"} readOnly={true} placeholder={ "= 1,1,2,3,5"}/>
+                    <textarea value={this.state.response} contentEditable={false} readOnly={true} placeholder={ "= 1,1,2,3,5"}/>
                     <br/>
                     <Link to="/">
                         <button>Volver al Menu</button>

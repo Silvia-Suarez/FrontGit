@@ -44,7 +44,7 @@ class Circulo extends Component {
     render() {
         return (
             <div className="container">
-                <div className="menuC">
+                <div className="fondo">
                     <h1>El Círculo</h1>
                     <p>Ingrese el radio para conocer el área y el perímetro del círculo</p>
                     <form onSubmit={this.handleSubmit}>
