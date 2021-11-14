@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import '../assets/css/Vistas.css';
 import {Link} from "react-router-dom";
+import {url} from "../global";
 
 class Triangulo extends Component {
     render() {
