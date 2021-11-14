@@ -3,10 +3,10 @@
 }
 
 .fondo{
-    height:fit-content;
-    width:400px;
+    height:auto;
+    width:auto;
     margin:20px auto;
-    background-color:lightsalmon;
+    background-color:salmon;
     border-radius: 15px;
     padding: 10px;
 }
@@ -23,10 +23,10 @@
     border-radius: 5px;
     font-weight: bold;
     font-size: medium;
-    width: 380px;
+    width: 200px;
 }
 .opciones button:hover{
-    background-color: salmon;
+    background-color: lightsalmon;
     color: white;
 }
 .opciones button:focus{

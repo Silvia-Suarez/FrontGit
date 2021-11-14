@@ -4,9 +4,9 @@
 
 .fondo{
     height:fit-content;
-    width:400px;
+    width:800px;
     margin:20px auto;
-    background-color:aquamarine;
+    background-color:lightsalmon;
     border-radius: 15px;
     padding: 10px;
 }
@@ -23,7 +23,7 @@
     border-radius: 5px;
     font-weight: bold;
     font-size: medium;
-    width: 380px;
+    width: 260px;
 }
 .opciones button:hover{
     background-color: #282c34;

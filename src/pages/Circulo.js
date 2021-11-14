@@ -50,15 +50,18 @@ class Circulo extends Component {
                     <form onSubmit={this.handleSubmit}>
                         <div>
                             <label>Radio: </label>
-                            <input name="radio" onChange={this.handleChange} value={this.state.radio} type="number" min={0} placeholder={"Ingrese el radio del círculo"}/>
+                            <input name="radio" onChange={this.handleChange} value={this.state.radio}
+                                   type="number" min={0}/>
                         </div>
                         <button type="submit">Mostrar</button>
                     </form>
                     <h4>Perímetro: {this.state.per}</h4>
                     <h4>Área: {this.state.area}</h4>
+                    <div className="opciones">
                     <Link to="/">
                         <button>Volver al Menu</button>
                     </Link>
+                    </div>
                 </div>
             </div>
         );

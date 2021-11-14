@@ -50,21 +50,24 @@ class Rectangulo extends Component {
                     <p>Ingrese la base y la altura para conocer el área y el perímetro del rectángulo</p>
                     <form onSubmit={this.handleSubmit}>
                         <div>
-                            <label>Base: </label>
-                            <input name="base" onChange={this.handleChange} value={this.state.base} type="number" min={0} placeholder={"Base del rectangulo"}/>
+                            <label>Base:    </label>
+                            <input name="base" onChange= {this.handleChange} value={this.state.base}
+                                   type="number" min={0}/>
                         </div>
 
                         <div>
-                            <label>Altura: </label>
-                            <input name="altura" onChange={this.handleChange} value={this.state.altura} type="number" min={0}placeholder={"Altura del rectangulo"}/>
+                            <label>Altura:  </label>
+                            <input name="altura" onChange=  {this.handleChange} value={this.state.altura}
+                                   type="number" min={0} r/>
                         </div>
                         <button type="submit">Mostrar</button>
                     </form>
-                    <h4>Perímetro:{this.state.per}</h4>
-                    <h4>Área: {this.state.area}</h4>
-                    <Link to="/">
-                        <button>Volver al Menu</button>
-                    </Link>
+                    <h6>Perímetro:{this.state.per}</h6>
+                    <h6>Área: {this.state.area}</h6>
+                    <div className="opciones">
+                        <Link to="/">
+                            <button>Volver al Menu</button>
+                        </Link></div>
                 </div>
             </div>
         );

@@ -50,15 +50,16 @@ class Fibonacci extends Component {
 
                     <form onSubmit={this.handleSubmit}>
                         <input name="numero" onChange={this.handleChange} value={this.state.numero} type="number"
-                               min={0} placeholder={"Ejemplo: 5"}/>
+                               min={0}/>
                         <button type="submit">Mostrar</button>
                     </form>
                     <br/>
-                    <textarea value={this.state.response} contentEditable={false} readOnly={true} placeholder={ "= 1,1,2,3,5"}/>
+                    <textarea value={this.state.response} contentEditable={false} readOnly={true}/>
                     <br/>
-                    <Link to="/">
-                        <button>Volver al Menu</button>
-                    </Link>
+                    <div className="opciones">
+                        <Link to="/">
+                            <button>Volver al Menu</button>
+                        </Link></div>
                 </div>
             </div>
         );

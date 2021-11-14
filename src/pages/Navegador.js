@@ -6,13 +6,24 @@ class Navegador extends Component{
         return(
             <div className="container">
                 <div className="fondo">
-                    <h1>seleccione la acción deseada</h1>
-                    <div className="opciones">
-                        <Link to="/fibonacci"><button>Números Fibonacci</button></Link>
-                        <Link to="/factorial"><button>Factorial de un Número</button></Link>
-                        <Link to="/circulo"><button>Medidas del Círculo</button></Link>
-                        <Link to="/triangulo"><button>Medidas del Triángulo</button></Link>
-                        <Link to="/rectangulo"><button>Medidas del Rectángulo</button></Link>
+                    <h1>CALCULATOR</h1>
+                    <p>Seleccione la opción que requiera</p>
+                    <div className="d-grid gap-2 col-10 mx-auto">
+                        <Link to="/fibonacci">
+                            <button type="button" class="btn btn-outline-dark">Números Fibonacci</button>
+                        </Link>
+                        <Link to="/factorial">
+                            <button type="button" class="btn btn-outline-light">Factorial de un Número</button>
+                        </Link>
+                        <Link to="/circulo">
+                            <button type="button" class="btn btn-outline-dark">Medidas del Círculo</button>
+                        </Link>
+                        <Link to="/rectangulo">
+                            <button type="button" class="btn btn-outline-light">Medidas del Rectángulo</button>
+                        </Link>
+                        <Link to="/triangulo">
+                            <button type="button" class="btn btn-outline-dark">Medidas del Triángulo</button>
+                        </Link>
                     </div>
                 </div>
             </div>

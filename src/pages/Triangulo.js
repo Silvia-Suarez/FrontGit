@@ -17,7 +17,7 @@ class Triangulo extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         console.log("enviado")
-        let data = {ladoa: this.state.ladoa,ladob: this.state.ladob, ladoc: this.state.ladoc}
+        let data = {ladoa: this.state.ladoa, ladob: this.state.ladob, ladoc: this.state.ladoc}
         fetch(url + "/triangulo", {
             method: "POST",
             body: JSON.stringify(data),
@@ -52,24 +52,28 @@ class Triangulo extends Component {
                     <form onSubmit={this.handleSubmit}>
                         <div>
                             <label>Lado a: </label>
-                            <input name="ladoa" onChange={this.handleChange} value={this.state.ladoa} type="number" min={0}/>
+                            <input name="ladoa" onChange={this.handleChange} value={this.state.ladoa} type="number"
+                                   min={0}/>
                         </div>
                         <div>
                             <label>Lado b: </label>
-                            <input name="ladob" onChange={this.handleChange} value={this.state.ladob}  type="number" min={0}/>
+                            <input name="ladob" onChange={this.handleChange} value={this.state.ladob} type="number"
+                                   min={0}/>
                         </div>
                         <div>
                             <label>Lado c: </label>
-                            <input name="ladoc" onChange={this.handleChange} value={this.state.ladoc}  type="number" min={0}/>
+                            <input name="ladoc" onChange={this.handleChange} value={this.state.ladoc} type="number"
+                                   min={0}/>
                         </div>
                         <button type="submit">Mostrar</button>
                     </form>
 
                     <h4>Perímetro: {this.state.per}</h4>
                     <h4>Área: {this.state.area}</h4>
-                    <Link to="/">
-                        <button>Volver al Menu</button>
-                    </Link>
+                    <div className="opciones">
+                        <Link to="/">
+                            <button>Volver al Menu</button>
+                        </Link></div>
                 </div>
             </div>
         );
